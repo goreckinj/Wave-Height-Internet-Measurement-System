@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>WHIMS Home Page</title>
+    <link rel="stylesheet">
+    <script src="javascripts/config.js"></script>
+
+</head>
+<body>
+  <p><a href="status.html">status page</a></p>
+  <p><a href="config.html">config editor</a></p>
+  <hr>
+    <form class="form-horizontal" action="/updateConfig" method="post">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Config</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="edbhost">Host</label>  
+          <div class="col-md-4">
+          <input id="edbhost" name="edbhost" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="edbport">Port</label>  
+          <div class="col-md-4">
+          <input id="edbport" name="edbport" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="edbname">DB name</label>  
+          <div class="col-md-4">
+          <input id="edbname" name="edbname" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="edbuser">Username</label>  
+          <div class="col-md-4">
+          <input id="edbuser" name="edbuser" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="edbpass">Password</label>
+          <div class="col-md-4">
+            <input id="edbpass" name="edbpass" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+        </div>
+
+        <input type="submit" id="submit" action="#"/>
+        
+        </fieldset>
+        </form>
+</body>

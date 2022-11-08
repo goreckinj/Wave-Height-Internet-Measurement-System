@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Status Page</title>
+
+    </head>
+    <body>
+        <p><a href="status.html">status page</a></p>
+  <p><a href="config.html">config editor</a></p>
+  <hr>
+        <table class="table">
+            <tr>
+            <th>
+                CPU STATUS
+            </th>
+        </tr>
+        <tr>
+            <td>Uptime</td>
+            <td id="cpu_uptime"></td>
+        </tr>
+        <tr>
+            <td>CPU Temperature (c)</td>
+            <td id="cpu_temp"></td>
+        </tr>
+        <tr>
+            <td>CPU Load</td>
+            <td><span id="cpu_load"></span></td>
+        </tr>
+        <tr>
+            <td>CPU Memory</td>
+            <td><span id="cpu_memory"></span> bytes remaining</td>
+        </tr>
+        </table>
+    </body>
+    <script src="javascripts/status.js"></script>
+</html>
